@@ -10,20 +10,11 @@ function SortParfums({ sorting }) {
     const [anchorEl, setAnchorEl] = useState(null);
     const [sortValue, setSortValue] = useState("default");
 
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
-
     // handle sorting parfums function by selcted price 
     const handleSorting = (event) => {
         setAnchorEl(null);
         sorting(event.target.value);
-        event.target.value == 1 ? setSortValue("lowest") 
-        : setSortValue("highest");
+        event.target.value == 1 ? setSortValue("lowest") : setSortValue("highest");
         
     }
 
