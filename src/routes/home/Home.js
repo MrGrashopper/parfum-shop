@@ -16,7 +16,7 @@ function Home() {
     const [change, setChange] = useState(false);
     const brandData = GetBrands(Parfums);
     const typeData = GetTypes(Parfums);
-    const parfumsPerPage = 8;
+    const parfumsPerPage = 12;
     const pageCount = Math.ceil(parfums.length / parfumsPerPage);
     const [page, setPage] = useState(1);
     const [start, setStart] = useState(0);
@@ -33,7 +33,7 @@ function Home() {
     // filtering parfums by selected brands
     const filterBrands = (brands) => {   
         const checkBrands = FilterBrands(brands);
-        setBrandState(checkBrands)
+        setBrandState(checkBrands);
         setChange(!change);
     };
 
