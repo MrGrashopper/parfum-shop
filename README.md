@@ -1,14 +1,15 @@
 # Functionality 
-    - Products data is pulled in from a JSON from data/Parfums.
-    - Responsive design made with FlexBox
+    - Products data fetched from a JSON file at data/Parfums.
+    - Responsive design made with Flexbox
     - layout inspired by flaconi
     - sorting enabled by brand, type and price
-    - pagination functionality with material-ui pagination
+    - pagination functionality with material-ui 
 
 # Tech
-    - React JS functional components with Hooks and exported functions (keep it clean)
+    - React JS functional components with custom Hooks / external functions (keep it clean)
     - Jest testing (ParfumCard, Functions)
     - styled components
+    - Dockerfile
 
 ______________________________
 
