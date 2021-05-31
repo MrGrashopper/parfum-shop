@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
         border: 1px solid #d5d5d5;
         cursor: pointer;
     }
+  }
 `;
 
 export const CardImage = styled.p`
@@ -21,6 +22,11 @@ export const CardImage = styled.p`
       object-fit: contain;
       height: 100%;
       width: inherit;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 2rem;
     }
 `;
 

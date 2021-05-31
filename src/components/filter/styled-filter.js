@@ -1,11 +1,7 @@
 import styled from 'styled-components';
 
 export const Left = styled.div`
-    position: absolute;
-    right: 27.5rem;
-    width: 11rem;
-    border-bottom: 1px solid #d5d5d5;
-
+    margin: 0 1rem;
 
     .MuiAccordionDetails-root, .MuiAccordionSummary-root {
         padding: 0;
@@ -14,7 +10,7 @@ export const Left = styled.div`
     @media (max-width: 768px) {
         position: relative;
         right: 0;
-        width: 100%;
+        width: auto;
 
         .MuiAccordionSummary-root {
             padding: 0 1rem;
@@ -23,10 +19,7 @@ export const Left = styled.div`
 `;
 
 export const Right = styled.div`
-    position: absolute;
-    right: 16rem;
-    width: 9rem;
-    border-bottom: 1px solid #d5d5d5;
+    margin: 0 1rem;
 
     .MuiAccordionDetails-root, .MuiAccordionSummary-root {
         padding: 0;
@@ -35,7 +28,7 @@ export const Right = styled.div`
     @media (max-width: 768px) {
         position: relative;
         left: 0;
-        width: 100%;
+        width: auto;
 
         .MuiAccordionSummary-root {
             padding: 0 1rem;
@@ -44,9 +37,7 @@ export const Right = styled.div`
 `;
 
 export const Sort = styled.div`
-    position: absolute;
-    right: 6rem;
-    border-bottom: 1px solid #d5d5d5;
+    margin: 0 1rem;
 
     .MuiAccordionDetails-root, .MuiAccordionSummary-root {
         padding: 0;
@@ -67,7 +58,7 @@ export const Sort = styled.div`
     @media (max-width: 768px) {
         position: relative;
         left: 0;
-        width: 100%;
+        width: auto;
 
         .MuiAccordionSummary-root {
             padding: 0 1rem;

@@ -6,7 +6,11 @@ export const FlexContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5rem;
-    
+
+    @media (min-width: 1920px) {
+        padding: 10rem;
+        margin-top: 5rem;
+    }
 `;
 
 export const PaginationContainer = styled.div`
@@ -14,16 +18,12 @@ export const PaginationContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 3rem;
-    
 `;
 
 export const FilterContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 1rem;
-    margin-left: 6rem;
+    flex-direction: row;
+    justify-content: center;
 
     .MuiAccordion-rounded:last-child, .MuiAccordion-rounded:first-child {
         border-radius: 0;
@@ -32,6 +32,7 @@ export const FilterContainer = styled.div`
     .MuiPaper-elevation1 {
         box-shadow: none;
         border: none;
+        border-bottom: 1px solid #d5d5d5;
     }
 
     .MuiAccordionSummary-root {
@@ -48,4 +49,13 @@ export const FilterContainer = styled.div`
         margin-top: 0;
         margin-left: 0rem;
     }
+`;
+
+
+export const AbsolutContainer = styled.div`
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
 `;

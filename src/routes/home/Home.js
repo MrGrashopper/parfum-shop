@@ -3,7 +3,7 @@ import Parfums from "../../data/parfums";
 import ParfumCard from "../../components/parfumCard/ParfumCard";
 import Filter from "../../components/filter/Filter";
 import SortParfums from "../../components/filter/SortParfums";
-import { FlexContainer, FilterContainer, PaginationContainer } from './styled-home';
+import { FlexContainer, FilterContainer, PaginationContainer, AbsolutContainer } from './styled-home';
 import GetBrands from "../../helpers/GetBrands";
 import GetTypes from "../../helpers/GetTypes";
 import { FilterBrandType, HandleSorting, FilterTypes, FilterBrands } from "../../helpers/Functions";
@@ -64,21 +64,23 @@ function Home() {
 
     return (
         <div>
-            <FilterContainer>
-                <Filter 
-                    data={brandData}
-                    name="brands"
-                    orientation="Left"
-                    filter={filterBrands}/>
-                   
-                <Filter 
-                    data={typeData}
-                    name="types"
-                    orientation="Right"
-                    filter={filterTypes}/>
+            <AbsolutContainer>
+                <FilterContainer>
+                    <Filter 
+                        data={brandData}
+                        name="brands"
+                        orientation="Left"
+                        filter={filterBrands}/>
+                    
+                    <Filter 
+                        data={typeData}
+                        name="types"
+                        orientation="Right"
+                        filter={filterTypes}/>
 
-                <SortParfums sorting={handleSorting}/>
-            </FilterContainer>
+                    <SortParfums sorting={handleSorting}/>
+                </FilterContainer>
+            </AbsolutContainer>
 
             <FlexContainer>
                 { parfums.slice(start, end).map((parfum, index) => {
